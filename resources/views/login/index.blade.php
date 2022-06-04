@@ -10,7 +10,7 @@
                 <input type="email" class="formRegister d-block m-auto rounded-3 p-1 mb-4" id="email" placeholder="Email">
                 <input type="password" class="formRegister d-block m-auto rounded-3 p-1 mt-4" id="password"
                     placeholder="Password">
-                <div class="mt-2 ms-5">
+                <div class="mt-2 ms-2 ms-md-5">
                     <input type="checkbox" class="ms-2"> Show Password</input>
                 </div>
                 <input type="submit" id="submitRegister" class="registerSubmit m-auto mt-4 p-2">

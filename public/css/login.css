@@ -6,7 +6,7 @@ body {
 
 .box {
     background-color: #fff;
-    width: 450px;
+    width: 350px;
     position: relative;
 }
 
@@ -23,7 +23,7 @@ h3 span {
     font-family: 'Poppins', sans-serif;
     border: 2px solid lightslategray;
     outline: none;
-    width: 290px;
+    width: 280px;
     color: lightslategrey;
     transition: 0.8s;
 }
@@ -35,7 +35,9 @@ h3 span {
 .box .registerSubmit[type="submit"] {
     border: 2px solid rgb(121, 204, 170);
     outline: none;
-    width: 400px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
     background: none;
     color: lightslategrey;
     border-radius: 10px;
@@ -47,4 +49,18 @@ h3 span {
 .box .registerSubmit[type="submit"]:hover {
     background: rgb(121, 204, 170);
     color: white;
+}
+
+@media (min-width:768px) {
+    .box {
+        width: 450px;
+    }
+
+    .box .formRegister {
+        width: 300px;
+    }
+
+    .box .registerSubmit[type="submit"] {
+        width: 300px;
+    }
 }

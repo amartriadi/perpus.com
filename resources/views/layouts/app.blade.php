@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <div class="">
+    <div class="container">
         @yield('login')
     </div>
-    <div>
+    <div class="">
         @yield('register')
     </div>
 
