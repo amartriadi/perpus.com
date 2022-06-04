@@ -2,7 +2,7 @@
 
 @section('register')
     <div class="boxRegis shadow m-auto mt-5 rounded-3 container">
-        <div class="d-flex">
+        <div class="d-flex pt-2">
             <div class=" d-block justify-content-center align-items-start col-6">
                 <h3 class="fs-1 fw-bold text-uppercase text-center pt-4">Perpus<span class="text-capitalize">dugam</span></h3>
                 <div class="d-flex justify-content-center">
