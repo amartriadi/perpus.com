@@ -15,7 +15,7 @@
                     placeholder="Password">
                 <input type="submit" id="submitRegister" class="registerSubmit m-auto mt-4 p-2">
                 <div class="createAkun mt-3 text-left">
-                    <p>Sudah Punya Akun? <a href="/login">Login Sekarang</a></p>
+                    <p>Sudah Punya Akun? <a href="/login">Login</a></p>
                 </div>
             </form>
         </div>
