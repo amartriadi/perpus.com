@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    color: lightslategrey;
+}
+
+.box {
+    background-color: #fff;
+    width: 450px;
+    position: relative;
+}
+
+h3 {
+    color: rgb(121, 204, 170);
+}
+
+h3 span {
+    color: grey;
+    font-weight: 500;
+}
+
+.box .formRegister {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid lightslategray;
+    outline: none;
+    width: 290px;
+    color: lightslategrey;
+    transition: 0.8s;
+}
+
+.box .formRegister:focus {
+    border: 2px solid rgb(121, 204, 170);
+}
+
+.box .registerSubmit[type="submit"] {
+    border: 2px solid rgb(121, 204, 170);
+    outline: none;
+    width: 400px;
+    background: none;
+    color: lightslategrey;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .registerSubmit[type="submit"]:hover {
+    background: rgb(121, 204, 170);
+    color: white;
+}
