@@ -15,11 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('./register/register', [
-//         "title" => "login"
-//     ]);
+// Route::get('/coba', function () {
+//     return view('coba');
 // });
+
+
+// login & register section
 Route::get('/', [LoginController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'create']);
+Route::post('/register', [RegisterController::class, 'store']);

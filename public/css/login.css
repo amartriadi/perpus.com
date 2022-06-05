@@ -28,10 +28,6 @@ h3 span {
     transition: 0.8s;
 }
 
-.box .formRegister:focus {
-    border: 2px solid rgb(121, 204, 170);
-}
-
 .box .registerSubmit[type="submit"] {
     border: 2px solid rgb(121, 204, 170);
     outline: none;

@@ -11,9 +11,38 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <form action="" class="bg-transparent py-5">
-                    <input type="email" class="formRegister rounded-3 p-1 mb-4" id="email" placeholder="Email">
-                    <input type="password" class="formRegister rounded-3 p-1 mb-2" id="password" placeholder="Password">
+                <form action="/register" method="post" class="bg-transparent py-5">
+                    @csrf
+                    <div class="formGroup mb-4">
+                        <input type="text" name="text"
+                            class="formRegister rounded-3 p-1 form-control @error('text') is-invalid @enderror" id="text"
+                            placeholder="Username" value="{{ old('text') }}" required>
+                        @error('text')
+                            <div class="col-12 ms-4 invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <div class="formGroup mb-4">
+                        <input type="email" name="email"
+                            class="formRegister rounded-3 p-1 form-control @error('email') is-invalid @enderror" id="email"
+                            placeholder="Email" value="{{ old('email') }}" required>
+                        @error('email')
+                            <div class="col-12 ms-4 invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <div class="formGroup mb-2">
+                        <input type="password" name="password"
+                            class="formRegister rounded-3 p-1 form-control @error('password') is-invalid @enderror"
+                            id="password" placeholder="Password" value="{{ old('password') }}" required>
+                        @error('password')
+                            <div class="col-12 ms-4 invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
                     <div class="show d-flex">
                         <div class="col-6">
                             <input type="checkbox" />
